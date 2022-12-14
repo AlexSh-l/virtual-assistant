@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+# Виртуальный ассистент
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Этот проект является веб-приложением для планирования событий с возможностью аутентификации.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+При входе на сайт, пользователь имеет возможность перейти на страницу профиля, входа в аккаунт и страницу с информацией о сайте. 
+При переходе на страницу с информацией о сайте, отображается страница с однородной информацией. 
+Если пользователь не авторизован во время перехода на страницу профиля, происходит переход на страницу входа в аккаунт. 
+При вводе некорректных логина и пароля, отображается сообщение о неверном логине или пароле. 
+При корректном вводе, отображается страница с профилем пользователя, на которой он видит своё имя, информацию о себе и запланированные события. 
+У пользователя появляется возможность перейти на главную страницу, календарь, страницу с информацией о сайте. 
+Пользователь также видит кнопку выхода из аккаунта, при нажатии которой он выходит из своей учётной записи. 
+При переходе на страницу календаря, пользователь видит календарь, кнопки и текстовые поля для добавления, редактирования и поиска события, а также кнопки для перехода между месяцами. 
+Для добавления нового события, пользователю необходимо выбрать нужную дату, путём нажатия на необходимую клетку календаря, нажатия на кнопку “Add event”, заполнения полей и дальнейшего нажатия на кнопку “Add”. 
+Редактирование события происходит подобным образом, только вместо кнопок “Add event” и ”Add” – пользователь должен нажать на кнопки “Edit event” и “Edit”. 
+Для поиска необходимого мероприятия, пользователь должен ввести название события, его участников или дату, в результате чего отобразится страница календаря с запланированным событием.
