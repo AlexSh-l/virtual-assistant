@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Authorization from './components/Authorization';
 import Profile from './components/Profile';
 import Info from './components/Info';
+import Calendar from './components/Calendar';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/login" element={<Authorization />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/info" element={<Info />} />
+          <Route path="/calendar" element={<Calendar />} />
         </Routes>
       </div>
     </BrowserRouter>

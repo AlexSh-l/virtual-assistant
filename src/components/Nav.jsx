@@ -20,6 +20,7 @@ const Nav = () => {
                     :
                     <li><Link to="/login">Your profile</Link></li>}
                 {!isAuthorized && <li><Link to="/login">Login</Link></li>}
+                {isAuthorized && <li><Link to="/calendar">Calendar</Link></li>}
                 <li><Link to="/info">About us</Link></li>
                 {isAuthorized && <input type="button" value="Log out" className="logOutButton" onClick={() => {
                     dispatch(logOutUserAction())
