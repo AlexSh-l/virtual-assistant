@@ -1,38 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar {
+  width: auto;
+  background-color: darkslateblue;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+li a {
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline;
+  margin-left: 2em;
+  margin-right: 2em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li :hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  display: inline;
+  margin-left: 2em;
+  margin-right: 2em;
+  background-color: slateblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logOutButton {
+  background-color: cornflowerblue;
+  color: white;
+  border-width: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.welcomeText {
+  font-size: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px purple, 0 0 1em darkblue, 0 0 0.2em darkblue;
+}
+
+.tldrText {
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: slateblue;
+}
+
+table,
+th,
+td {
+  border: 2px solid;
+}
+
+th {
+  width: 150px;
+  height: 50px;
+  background-color: slateblue;
+}
+
+td {
+  width: 150px;
+  height: 100px;
+  text-align: left;
+  vertical-align: text-top;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  background-color: gray;
+}
+
+.textInput {
+  border-radius: 7px;
+  padding: 10px;
+  margin: 20px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+  border-radius: 10px;
+  border-color: white;
+  padding: 10px;
+  margin: 20px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: slateblue;
+  cursor: pointer;
+}
+
+.authCard {
+  display: flex;
+  justify-content: center;
+}
+
+.authContent {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 40em;
+  min-width: 30em;
+}
+
+.authText {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: slateblue;
+}
+
+.authDeniedText {
+  color: red;
+  margin: 20px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infoHeader {
+  margin-top: 80px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkslateblue;
+}
+
+.infoContent {
+  margin: 100px;
+  text-align: left;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+
+.profileCard {
+  display: flex;
+  justify-content: center;
+}
+
+.profileContent {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkslateblue;
+}
+
+.profileName {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.profileText {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkslateblue;
+}
+
+.eventCard {
+  border-width: 2px;
+  background-color: lightblue;
+  border-radius: 20px;
+  padding: 10px;
+  border-color: darkslateblue;
+  border-style: solid;
+  margin: 10px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkslateblue;
+}
+
+
+.blankDate {
+  background-color: lightgray;
+}
+
+.currentDate {
+  color: white;
+  border-color: black;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.calendarTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalWindow {
+  position: fixed;
+  transform: scale(0);
+}
+
+.activeModalWindow {
+  transform: scale(1);
+}
+
+.selectedCell {
+  color: black;
+  border-color: black;
+  background-color: lightsteelblue;
+  cursor: pointer;
+}
+
+.cell {
+  color: black;
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.currentSelectedCell {
+  color: white;
+  border-color: black;
+  background-color: steelblue;
+  cursor: pointer;
+}
+
+.eventCell {
+  color: black;
+  border-color: black;
+  background-color: lightcyan;
+  cursor: pointer;
+}
+
+.selectedEventCell {
+  color: black;
+  border-color: black;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.eventCurrentCell {
+  color: white;
+  border-color: black;
+  background-color: lightseagreen;
+  cursor: pointer;
+}
+
+.calendarTopPanel {
+  display: inline;
+}
+
+.calendarTopPanelContent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px;
+  border-color: gray;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  background-color: whitesmoke;
+}
+
+.calendarMonthChangePanel {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.calendarEditButton {
+  border-radius: 3px;
+  border-color: blue;
+  padding: 5px;
+  margin: 20px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.calendarInput {
+  border-radius: 2px;
+  padding: 5px;
+  margin: 20px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-color: lightgray;
+}
+
+.calendarMonthChangeButton {
+  border-radius: 3px;
+  border-color: lightgray;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 20px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.calendarMonthChangeText {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }
